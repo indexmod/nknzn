@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+	   * {
+	    box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
+	   body {
+	    margin: 0;
+	    font-family: Arial;
+	    font-size: 17px;
+    }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+    p, a {
 
-.content {
-  position: fixed;
-  bottom: 0;
-  background: transparent;
-  color: white;
-  width: 100%;
-  padding: 20px;
-}
+    font: Monaco;
+    font-size: 22px;
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
+    }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+	   #myVideo {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    min-width: 100%;
+	    min-height: 100%;
+    }
 
-a:link {
-  color: red;
-}
+	   .content {
+	    position: fixed;
+	    bottom: 0;
+	    background: transparent;
+	    color: white;
+	    width: 100%;
+	    padding: 20px;
+	  }
 
-/* visited link */
-a:visited {
-  color: red;
-}
+	   a:link {
+	    color: red;
+    }
 
-/* mouse over link */
-a:hover {
-  color: red;
-}
+	   a:visited {
+	    color: red;
+    }
+	   a:hover {
+	    color: red;
+    }
 
-/* selected link */
-a:active {
-  color: red;
-}
-</style>
+	   a:active {
+	    color: red;
+    }
+	</style>
+
+	<title>Mic Sachkov</title>
 </head>
 <body>
+	<video autoplay="" id="myVideo" loop=""><source src="rain.mp4" type="video/mp4"> Your browser does not support HTML5 video.</video>
+	<div class="content">
+		<p><a href="Mic-Sachkov.pdf">Bio</a></p>
+	</div>
+	<script>
+	   var video = document.getElementById("myVideo");
+	   var btn = document.getElementById("myBtn");
 
-<video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <p><a href="Mic-Sachkov.pdf">Bio</a></p>
-</div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
+	   function myFunction() {
+	    if (video.paused) {
+	      video.play();
+	      btn.innerHTML = "Pause";
+	    } else {
+	      video.pause();
+	      btn.innerHTML = "Play";
+	    }
+	   }
+	</script>
 </body>
 </html>

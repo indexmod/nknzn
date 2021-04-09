@@ -9,19 +9,19 @@
 
 	   body {
 	    margin: 0;
-	    font-family: monospace;
-	    font-size: 50px;
+	    font-family: Helvetica;
+	    font-size: 100px;
     }
 
     p, a {
 
-    font-family: monospace;
-    font-size: 50px;
+    font-family: Helvetica;
+    font-size: 100px;
 
     }
 
 	   #myVideo {
-	    position: fixed;
+	    position: relative;
 	    right: 0;
 	    bottom: 0;
 	    min-width: 100%;
@@ -30,30 +30,27 @@
 
 	   .content {
 	    position: fixed;
-	    bottom: 0;
-	    background: transparent;
-	    color: white;
+      vertical-align: middle;
 	    width: 100%;
-	    padding: 20px;
 	  }
 
 	   a:link {
-	    color: white;
-      decoration: none;
+	    color: black;
+      text-decoration: none;
     }
 
 	   a:visited {
-	    color: white;
-      decoration: none;
+	    color: black;
+      text-decoration: none;
     }
 	   a:hover {
-	    color: white;
-      decoration: none;
+	    color: black;
+      text-decoration: underline;
     }
 
 	   a:active {
-	    color: white;
-      decoration: none;
+	    color: black;
+      text-decoration: none;
     }
 
 	</style>
@@ -65,19 +62,5 @@
 	<div class="content">
 		<p><a href="Mic-Sachkov.pdf">Mic Sachkov</a></p>
 	</div>
-	<script>
-	   var video = document.getElementById("myVideo");
-	   var btn = document.getElementById("myBtn");
-
-	   function myFunction() {
-	    if (video.paused) {
-	      video.play();
-	      btn.innerHTML = "Pause";
-	    } else {
-	      video.pause();
-	      btn.innerHTML = "Play";
-	    }
-	   }
-	</script>
 </body>
 </html>

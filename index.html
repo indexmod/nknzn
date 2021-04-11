@@ -76,7 +76,7 @@
 	<title>Mic Sachkov</title>
 </head>
 <body>
-	<video autoplay loop muted src="IPHONEX.webm"></video>
+	<video class="BgVideo" autoplay loop muted playsinline src="2021-04-11 09.59.26.mp4"></video>
 	<header class="viewport-header">
 		<h1><span><a href="https://nknzn.tk/Mic-Sachkov.pdf#index">Mic Sachkov</a></span></h1>
 	</header>
@@ -92,6 +92,9 @@
 	   - Browser compat
 
 	   */
+var bgvideo = document.getElementById("BgVideo");
+bgvideo.muted = true;
+bgvideo.play();
 	</script>
 </body>
 </html>
